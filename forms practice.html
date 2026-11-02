@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My forms</title>
+</head>
+<body>
+        <h1>Welcome to the Grand Hotel</h1>
+        <p>Experience Luxury and Comfort like never before!</p>
+        <hr>
+        <h1>About Our Hotel</h1>
+        <p>Grand Hotel is known for its World class hospitality and comfortable rooms.</p>
+        <ul>
+            <li>24/7 Room Service</li>
+            <li>Free Wi-Fi</li>
+            <li>Swimming Pool & Gym</li>
+            <li>Luxury Dining</li>
+        </ul>
+        <hr>
+        <h1>Available Rooms</h1>
+        <table border="1" cellspacing="2" cellpadding="15">
+            <thead>
+                <tr>
+                <th>Room Type</th>
+                <th>Price Per Night</th>
+                <th>Facilities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Single Room</td>
+                    <td>$100</td>
+                    <td>1 bed, Free Wi-Fi, TV</td>
+                </tr>
+                <tr>
+                    <td>Double Room</td>
+                    <td>$180</td>
+                    <td>2 bed, Free Wi-Fi, Mini-Bar</td>
+                </tr>
+                <tr>
+                <td>Suite</td>
+                    <td>$300</td>
+                    <td> Luxury bed,Living Area Free Wi-Fi, TV, Jacuzzi</td>
+                </tr>  
+            </tbody>
+        </table>
+        <form action="">
+            <fieldset>
+                <legend>Basic Info:</legend>
+              <label for="name"> Full Name:</label>
+             <input type="text" id="name" name="name">
+        <br>
+            <label for="email"> Email:  </label>
+            <input type="email" id="email"   name="email">
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Booking Requirements:</legend>
+            <label for="date"> Check-in Date:</label>
+            <input type="date" id="date" name="date">
+        <br>
+            <label for="date"> Check-out Date:</label>
+            <input type="date" id="date" name="date">
+        <br>
+           <label for="room">Choose Room Type:</label>
+            <select id="room" name="room">
+            <option value="">--select a room--</option>    
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
+            </select>
+         <br>   
+            <label for="number"> Number of Guests:</label>
+            <input type="number"  name="number" id="number">
+        <br>
+            <p>Special Requests:</p>
+             <textarea name="requests" id="request"  rows="5" column="50">
+                    any adittional  requests..
+            </textarea> 
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Payment:</legend>
+            <p> Payment Method:</p>
+            <input type="radio" name="payment" value="cash">  Cash
+            <input type="radio"  name="payment" value= "card"> Card
+        </fieldset>    
+         <br>
+         <input type="checkbox" name="terms" value="yes"> I agree to the terms and conditions.
+        <br>
+        <button type= "sumbit">Book Now</button>
+        <button type= "reset">Reset</button>
+        </form>
+        <hr>
+</body>
+<footer>
+    <p>&copy 2026 Grand Hotel</p><a href="#">Visit Our Website</a>
+</footer>
+</html>
